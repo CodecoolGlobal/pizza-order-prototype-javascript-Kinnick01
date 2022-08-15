@@ -120,36 +120,57 @@
             ]
         },
         {
-            "id": 1,
-            "name": "Marinara",
+            "id": 7,
+            "name": "Quattro formaggio",
             "ingredients": [
                 "San Marzano tomato sauce",
                 "garlic",
                 "oregano",
-                "olive oil"
+                "olive oil",
+                "grana padano",
+                "mozzarella",
+                "parmiggiano",
+                "bufala mozzarella"
+
             ],
-            "price": 3200,
-            "allergens": [
-                1,
-                3,
-                9
-            ]
-        },
-        {
-            "id": 1,
-            "name": "Marinara",
-            "ingredients": [
-                "San Marzano tomato sauce",
-                "garlic",
-                "oregano",
-                "olive oil"
-            ],
-            "price": 3200,
+            "price": 3400,
             "allergens": [
                 1,
                 3,
                 9
             ]
         }
-    ]
+    ],
+"allergens": [
+    {
+        "id": 1,
+        "name": "gluten"
+    },
+    {
+        "id": 2,
+        "name": "crustaceans"
+    },
+    {
+        "id": 3,
+        "name": "eggs"
+    },
+    {
+        "id": 4,
+        "name": "fish"
+    },
+    {
+        "id": 5,
+        "name": "DEEZ NUTS"
+    },
+    {
+        "id": 6,
+        "name": "gluten"
+    },
+    {
+        "id": 7,
+        "name": "lactose"
+    }
+
+]
+
 }

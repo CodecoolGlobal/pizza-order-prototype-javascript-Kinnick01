@@ -22,8 +22,11 @@ router
 router
 .route("/")
 .get((req, res) => {
-	res.json(package);
-	
+	res.json(package.pizzas);
+})
+
+.get((req, res) => {
+	res.json(package.allergens);
 })
 // .post((req, res) => {
 // 	res.send(`Youve got a post`);
