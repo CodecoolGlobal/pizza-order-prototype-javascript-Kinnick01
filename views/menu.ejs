@@ -8,16 +8,23 @@
   <title>Order your pizza</title>
   <link rel="stylesheet" href="/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <div class="navigation-menu">
+    <ul class="navbar">
+      <li class="navbar-buttons"><a href="/">Home</a></li>
+      <li class="navbar-buttons"><a href="/pizza/list">Menu</a></li>
+      <li class="navbar-buttons"><a href="/myorder">My order</a></li>
+    </ul>
+  </div>
   <div id="container">
     <% pizzasList.forEach(function(pizza) { %>
       <div class="pizza-card">
-        <img class="image-class" src="/<%=pizza.name%>.jpg">
-        <form id="<%= pizza.id%>" action="http://127.0.0.1:9001/myorder" method="post">
+        <img class="image-class" src="/<%=pizza.name%>.png">
+        <form id="<%= pizza.id%>" class="menu-form" action="http://127.0.0.1:9001/myorder" method="post">
           <h1>
             <%= pizza.name %>
           </h1>

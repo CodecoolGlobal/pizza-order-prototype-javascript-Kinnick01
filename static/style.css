@@ -1,10 +1,12 @@
 .element {
   all: revert;
 }
-body, html {
+
+body,
+html {
   margin: 0px;
-height: 100%;
-position: relative;
+  height: 100%;
+  position: relative;
 }
 
 .navigation {
@@ -12,6 +14,14 @@ position: relative;
   display: flex;
   width: 100%;
   background-color: crimson;
+}
+
+.navigation-menu{
+  position: relative;
+  display: flex;
+  width: 100%;
+  background-color: crimson;
+  margin-bottom: 20px;
 }
 
 .navbar {
@@ -24,22 +34,35 @@ position: relative;
   width: 100px;
   padding: 20px;
   list-style: none;
-  background-color: tomato;
   text-align: center;
   color: white;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 700;
   font-size: larger;
-  
+}
+
+.navbar-buttons>a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+.navbar-buttons:hover {
+  color: white;
+  background-color: tomato;
+}
+
+.bgrnd {
+  height: 100%;
 }
 
 #bgrnd-img {
-  background-size: cover;
-    width: 100%;
-    background-repeat: no-repeat;
+  display: block;
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+  object-fit: cover;
 }
 
-.index-text{
+.index-text {
   color: crimson;
   position: absolute;
   text-align: center;
@@ -50,19 +73,20 @@ position: relative;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
   font-size: larger;
-  top: 30%;
+  top: 25%;
 }
 
-.welcome-text{
+.welcome-text {
   width: 70%;
 }
 
-.welcome-head{
+.welcome-head {
   font-size: 80px;
   text-shadow: 4px 6px 8px rgba(0, 0, 0, 0.5)
 }
 
-.welcome-para{
+.welcome-para {
+  padding-top: 5%;
   justify-content: center;
   text-align: justify;
   font-size: 30px;
@@ -70,32 +94,29 @@ position: relative;
   margin: auto;
   text-shadow: 4px 6px 8px rgba(0, 0, 0, 0.5)
 }
-.pizza-card {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  width: 500px;
-  height: 200px;
-  /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-  transition: 0.3s;
-}
 
-/* On mouse-over, add a deeper shadow */
-.pizza-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
-}
-
-/* Add some padding inside the card container */
 #container {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 33% 33% 33%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+}
+
+.pizza-card {
+  display: inline-flex;
+  padding-bottom: 20px;
+  height: 300px;
 }
 
 .image-class {
-  
-   height: 100%;
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center;
+  max-width: 400px;
+  max-height: 400px;
+  margin-right: 20px;
+  object-fit: fill;
+}
+
+.menu-form {
+  width: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: larger;
 }
