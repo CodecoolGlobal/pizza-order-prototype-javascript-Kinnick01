@@ -1,15 +1,15 @@
 const { log } = require("console");
 const express = require("express");
-const router = express.Router();
+const allergens = express.Router();
 const fs = require('fs');
 const pkgs = fs.readFileSync("menu.json");
 const package = JSON.parse(pkgs);
 
-router
+allergens
 .route("/:id")
 
 .get((req, res) => {
-	res.send(`<h2>${JSON.stringify(package.pizza[Number(req.params.id)-1])}</h2>`);
+	res.send(`<h2>${JSON.stringify(package.allergens[Number(req.params.id)-1])}</h2>`);
 })
 // .post((req, res) => {
 // 	res.send(`Youve got a post`);
@@ -19,15 +19,12 @@ router
 // 	// file written successfully
 // })
 
-router
+allergens
 .route("/")
-.get((req, res) => {
-	res.json(package.pizzas);
-})
-
 .get((req, res) => {
 	res.json(package.allergens);
 })
+
 // .post((req, res) => {
 // 	res.send(`Youve got a post`);
 // 	const newPackage = req.body;
@@ -36,4 +33,4 @@ router
 
 // })
 
-module.exports = router
+module.exports = allergens
