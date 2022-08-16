@@ -110,7 +110,8 @@
                 "olive oil",
                 "white truffle from Tuscany",
                 "Pule cheese",
-                "Edible gold on top of the cheese"
+                "Edible gold on top of the cheese",
+                "Black caviar"
             ],
             "price": 25000,
             "allergens": [
@@ -121,7 +122,7 @@
         },
         {
             "id": 7,
-            "name": "Quattro formaggio",
+            "name": "Quattro Formaggi",
             "ingredients": [
                 "San Marzano tomato sauce",
                 "garlic",
