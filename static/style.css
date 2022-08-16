@@ -1,33 +1,16 @@
+/* RESET DEFAULT CSS SETTINGS */
+
 .element {
   all: revert;
 }
+
+/* GENERAL SETTINGS */
 
 body,
 html {
   margin: 0px;
   height: 100%;
   position: relative;
-}
-
-.navigation {
-  position: absolute;
-  display: flex;
-  width: 100%;
-  background-color: crimson;
-}
-
-.navigation-menu{
-  position: relative;
-  display: flex;
-  width: 100%;
-  background-color: crimson;
-  margin-bottom: 20px;
-}
-
-.navbar {
-  display: inline-flex;
-  margin: 0px;
-  padding: 0px;
 }
 
 .navbar-buttons {
@@ -51,18 +34,33 @@ html {
   background-color: tomato;
 }
 
-.bgrnd {
+/* INDEX PAGE CSS */
+
+.index-navigation {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  background-color: crimson;
+}
+
+.index-navbar {
+  display: inline-flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+.index-bgrnd {
   height: 100%;
 }
 
-#bgrnd-img {
+#index-bgrnd-img {
   display: block;
   height: -webkit-fill-available;
   width: -webkit-fill-available;
   object-fit: cover;
 }
 
-.index-text {
+.index-textbox-container {
   color: crimson;
   position: absolute;
   text-align: center;
@@ -76,16 +74,16 @@ html {
   top: 25%;
 }
 
-.welcome-text {
+.index-textbox {
   width: 70%;
 }
 
-.welcome-head {
+.index-textbox-header {
   font-size: 80px;
   text-shadow: 4px 6px 8px rgba(0, 0, 0, 0.5)
 }
 
-.welcome-para {
+.index-textbox-paragraph {
   padding-top: 5%;
   justify-content: center;
   text-align: justify;
@@ -95,28 +93,57 @@ html {
   text-shadow: 4px 6px 8px rgba(0, 0, 0, 0.5)
 }
 
-#container {
+/* MENU PAGE CSS */
+
+.menu-navigation {
+  position: relative;
+  display: flex;
+  width: 100%;
+  background-color: crimson;
+}
+
+.menu-navbar {
+  display: inline-flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+#menu-container {
+  position: absolute;
   display: flex;
   flex-wrap: wrap;
   padding-left: 20px;
+  padding-top: 20px;
 }
 
-.pizza-card {
+.menu-item-container {
   display: inline-flex;
   padding-bottom: 20px;
   height: 300px;
 }
 
-.image-class {
+.menu-item-img {
   max-width: 400px;
   max-height: 400px;
   margin-right: 20px;
   object-fit: fill;
 }
 
-.menu-form {
+.menu-item-form {
   width: 100%;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
   font-size: larger;
+}
+
+.menu-bgrnd {
+  height: 100%;
+  top: 0px;
+}
+
+#menu-bgrnd-img {
+  display: block;
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+  object-fit: cover;
 }

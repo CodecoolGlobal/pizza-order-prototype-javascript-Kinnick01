@@ -13,18 +13,18 @@
 </head>
 
 <body>
-  <div class="navigation-menu">
-    <ul class="navbar">
+  <div class="menu-navigation">
+    <ul class="menu-navbar">
       <li class="navbar-buttons"><a href="/">Home</a></li>
       <li class="navbar-buttons"><a href="/pizza/list">Menu</a></li>
       <li class="navbar-buttons"><a href="/myorder">My order</a></li>
     </ul>
   </div>
-  <div id="container">
+  <div id="menu-container">
     <% pizzasList.forEach(function(pizza) { %>
-      <div class="pizza-card">
-        <img class="image-class" src="/<%=pizza.name%>.png">
-        <form id="<%= pizza.id%>" class="menu-form" action="http://127.0.0.1:9001/myorder" method="post">
+      <div class="menu-item-container">
+        <img class="menu-item-img" src="/<%=pizza.name%>.png">
+        <form id="<%= pizza.id%>" class="menu-item-form" action="http://127.0.0.1:9001/myorder" method="post">
           <h1>
             <%= pizza.name %>
           </h1>
@@ -42,7 +42,9 @@
       </div>
       <% }); %>
   </div>
-
+  <div class="menu-bgrnd">
+    <img id="menu-bgrnd-img" src="/menu_bgrnd.jpg">
+  </div>
 </body>
 
 </html>
