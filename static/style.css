@@ -1,7 +1,75 @@
 .element {
   all: revert;
 }
+body, html {
+  margin: 0px;
+height: 100%;
+position: relative;
+}
 
+.navigation {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  background-color: crimson;
+}
+
+.navbar {
+  display: inline-flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar-buttons {
+  width: 100px;
+  padding: 20px;
+  list-style: none;
+  background-color: tomato;
+  text-align: center;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  font-size: larger;
+  
+}
+
+#bgrnd-img {
+  background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.index-text{
+  color: crimson;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: larger;
+  top: 30%;
+}
+
+.welcome-text{
+  width: 70%;
+}
+
+.welcome-head{
+  font-size: 80px;
+  text-shadow: 4px 6px 8px rgba(0, 0, 0, 0.5)
+}
+
+.welcome-para{
+  justify-content: center;
+  text-align: justify;
+  font-size: 30px;
+  width: 70%;
+  margin: auto;
+  text-shadow: 4px 6px 8px rgba(0, 0, 0, 0.5)
+}
 .pizza-card {
   display: grid;
   grid-template-columns: 50% 50%;

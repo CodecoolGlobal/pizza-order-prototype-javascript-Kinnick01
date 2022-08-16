@@ -1,38 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Order your pizza</title>
-  <link rel="stylesheet" href="/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;700&display=swap" rel="stylesheet">
+
+    <title>Pizza Di Mario</title>
 </head>
-
 <body>
-  <div id="container">
-    <% pizzasList.forEach(function(pizza) { %>
-      <div class="pizza-card">
-        <img class="image-class" src="/<%=pizza.name%>.jpg">
-        <form id="<%= pizza.id%>" action="http://127.0.0.1:9001/myorder" method="post">
-          <h1>
-            <%= pizza.name %>
-          </h1>
-          <h2>
-            <%= pizza.ingredients %>
-          </h2>
-          <h3>allergens <%= pizza.allergens %>
-          </h3>
-          <h4>price <%= pizza.price %>
-          </h4>
-          <input name="pizza" value="<%= pizza.id%>" type="hidden">
-          <input name="number" type="number" value="1" min="1">
-          <button type="submit" class="add-to-cart">Add to cart</button>
-        </form>
-      </div>
-      <% }); %>
-  </div>
-
+    <div class="navigation">
+        <ul class="navbar">
+            <li class="navbar-buttons">Home</li>
+            <li class="navbar-buttons">Menu</li>
+            <li class="navbar-buttons">My Order</li>
+        </ul>
+    </div>
+    <div class="index-text">
+        <div class="welcome-text">
+        <h1 class="welcome-head">Welcome to Pizza Di Mario</h1>
+        <p class="welcome-para">"Zio Lino di che sesso sono le tartarughe; lei è un cornuto lo sa ti spezzo i menischi. I ricchioni si dividono in due grandi categorie un caffè con utopia; come dicono i francesi a frappé! Disgrazieto maledetto; bistrò non significa bistrot francese ma due volte stronzo ti ho comprato ai primi di novembre."</p>
+    </div>
+    </div>
+    <div class="bgrnd">
+        <img id="bgrnd-img" src="/bgrnd_img.jpg">
+    </div>
 </body>
-
 </html>
