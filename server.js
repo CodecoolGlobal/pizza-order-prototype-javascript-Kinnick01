@@ -1,8 +1,7 @@
 const express = require("express");
 const fs = require("fs");
 const path = require("path");
-const pkgs = fs.readFileSync("menu.json");
-const package = JSON.parse(pkgs);
+const package = require("./menu.json")
 
 const app = express();
 app.set("view engine", "ejs")
@@ -18,10 +17,10 @@ const allergensRouter = require("./routers/allergens")
 app.use("/api/allergens", allergensRouter)
 
 app.get('/', function(req, res){
-    res.render("index", { text: `ezt a fos szart baszki!!!`})
+    res.render("welcome", { welcome: `ezt a fos szart baszki!!!`})
     });
 app.get('/pizza/list', function(req,res){
-    res.render("index", {text: JSON.stringify(package)})
+    res.render("index", {pizzasList: package.pizzas})
 })
 
 // async function listPizzas(){

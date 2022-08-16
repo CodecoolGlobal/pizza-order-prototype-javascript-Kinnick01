@@ -7,7 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    <%=text%>
+       <ul>
+        <% pizzasList.forEach(function(pizza) { %>
+          <li>
+            <strong><%= pizza.name %></strong>
+            price <%= pizza.price %>,
+            allergens <%= pizza.allergens %>
+          </li>
+        <% }); %>
+      </ul>
     
 </body>
 </html>

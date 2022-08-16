@@ -2,8 +2,7 @@ const { log } = require("console");
 const express = require("express");
 const allergens = express.Router();
 const fs = require('fs');
-const pkgs = fs.readFileSync("menu.json");
-const package = JSON.parse(pkgs);
+const package = require("../menu.json")
 
 allergens
 .route("/:id")
