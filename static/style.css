@@ -226,6 +226,10 @@ h3 {
   text-align-last: right;
 }
 
+#menu-allergen-container{
+  display: flex;
+  position: relative;
+}
 /* ORDER PAGE */
 
 .order-navigation {
