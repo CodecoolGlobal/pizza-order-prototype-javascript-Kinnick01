@@ -21,7 +21,7 @@
     </ul>
   </div>
   <div id="menu-container">
-    <% pizzasList.forEach(function(pizza) { %>
+    <% pizzasList.pizzas.forEach(function(pizza) { %>
       <div class="menu-item-container">
         <img class="menu-item-img" src="/<%=pizza.name%>.png">
         <form id="<%= pizza.id%>" class="menu-item-form" action="http://127.0.0.1:9001/myorder" method="post">
@@ -41,10 +41,25 @@
         </form>
       </div>
       <% }); %>
-  </div>
-  <div class="menu-bgrnd">
-    <img id="menu-bgrnd-img" src="/menu_bgrnd.jpg">
-  </div>
-</body>
+    </div>
+    
+    <button onclick="<%showAllergens()%>">You have allergies? Mamma Mia</button>
+    
+    <form id="pizza-filter" action="http://127.0.0.1:9001/filteredPizza" method="get">
+      
+    </form>
+    <div class="menu-bgrnd">
+      <img id="menu-bgrnd-img" src="/menu_bgrnd.jpg">
+    </div>
+    <%function showAllergens() {%>
+    <%pizzasList.allergens.forEach(function(allergen) {%>
+        <div>
+          <label for="<%=allergen.id%>"><%=allergen.name%></label>
+        <input type="checkbox" id="<%=allergen.id%>">
+        </div>
+      <%});%>
+   <%};%>
+  </body>
+  
 
 </html>

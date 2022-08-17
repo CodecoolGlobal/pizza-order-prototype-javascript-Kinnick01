@@ -23,7 +23,7 @@ app.get('/', function(req, res){
     });
 app.get('/pizza/list', function(req,res){
     let package = JSON.parse(fs.readFileSync("./menu.json"));
-    res.render("menu", {pizzasList: package.pizzas})
+    res.render("menu", {pizzasList: package})
 })
 app.get('/myorder', function(req,res) {
     let package = JSON.parse(fs.readFileSync("./order.json"));
