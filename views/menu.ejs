@@ -37,9 +37,11 @@
           </h3>
           <h4>price <%= pizza.price %>
           </h4>
-          <input name="pizza" value="<%= pizza.id%>" type="hidden">
-          <input name="number" type="number" value="1" min="1">
-          <button type="submit" class="add-to-cart">Add to cart</button>
+          <div class="input-container">
+            <input name="pizza" value="<%= pizza.id%>" type="hidden">
+            <input class="input-field" name="number" type="number" value="1" min="1">
+            <button type="submit" class="add-to-cart">Add to cart</button>
+          </div>
         </form>
       </div>
       <% }); %>

@@ -40,11 +40,17 @@ html {
   padding-left: 8px;
 }
 
+h4{
+  text-transform: capitalize;
+}
+
 h1, h4{
+  font-style: initial;
   font-size: 26px;
   font-weight: 700;
   margin: 0px 0px 0px 0px;
   padding: 10px 0px 10px 0px;
+  text-align: center;
 }
 
 h2, h3{
@@ -52,9 +58,8 @@ h2, h3{
   font-weight: 400;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 8px 0px;
+  text-align: justify;
 }
-
-
 
 /* INDEX PAGE CSS */
 
@@ -171,6 +176,32 @@ h2, h3{
   object-fit: cover;
 }
 
+.input-container{
+  display: flex;
+  float: right;
+  padding: 0px;
+  margin: 0px;
+  height: 28px;
+}
+
+.add-to-cart{
+  width: 100px;
+  padding: 0px;
+  margin: 0px;
+  background-color: tomato;
+  border: 0px;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.input-field{
+  padding: 0px;
+  margin: 0px;
+  width: 34px;
+  border-radius: 20px 0px 0px 20px;
+  border: 0px;
+  text-align: right;
+  text-align-last: right;
+}
 /* ORDER PAGE */
 
 .order-navigation {
