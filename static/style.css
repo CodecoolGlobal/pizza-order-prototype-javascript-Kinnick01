@@ -147,3 +147,18 @@ html {
   width: -webkit-fill-available;
   object-fit: cover;
 }
+
+/* ORDER PAGE */
+
+.order-navigation {
+  position: relative;
+  display: flex;
+  width: 100%;
+  background-color: crimson;
+}
+
+.order-navbar {
+  display: inline-flex;
+  margin: 0px;
+  padding: 0px;
+}
