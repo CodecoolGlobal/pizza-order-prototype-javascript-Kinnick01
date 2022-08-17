@@ -34,17 +34,18 @@ html {
   background-color: tomato;
 }
 
-.navbar-logo{
+.navbar-logo {
   align-self: center;
   max-height: 42px;
   padding-left: 8px;
 }
 
-h4{
+h4 {
   text-transform: capitalize;
 }
 
-h1, h4{
+h1,
+h4 {
   font-style: initial;
   font-size: 26px;
   font-weight: 700;
@@ -53,7 +54,8 @@ h1, h4{
   text-align: center;
 }
 
-h2, h3{
+h2,
+h3 {
   font-size: 18px;
   font-weight: 400;
   margin: 0px 0px 0px 0px;
@@ -157,6 +159,15 @@ h2, h3{
   object-fit: fill;
 }
 
+.menu-item-img:hover{
+  -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
 .menu-item-form {
   width: 300px;
   font-family: 'Josefin Sans', sans-serif;
@@ -176,7 +187,7 @@ h2, h3{
   object-fit: cover;
 }
 
-.input-container{
+.input-container {
   display: flex;
   float: right;
   padding: 0px;
@@ -184,16 +195,28 @@ h2, h3{
   height: 28px;
 }
 
-.add-to-cart{
+.add-to-cart {
+  color: antiquewhite;
+  font-family: 'Josefin Sans', sans-serif;
   width: 100px;
   padding: 0px;
   margin: 0px;
-  background-color: tomato;
+  background-color: rgba(5, 146, 0, 0.9);
   border: 0px;
   border-radius: 0px 20px 20px 0px;
 }
 
-.input-field{
+.add-to-cart:hover {
+  background-color: rgba(5, 146, 0, 1.0);
+}
+
+.add-to-cart:active {
+  width: 92px;
+}
+
+.input-field {
+  font-family: 'Josefin Sans', sans-serif;
+  color: crimson;
   padding: 0px;
   margin: 0px;
   width: 34px;
@@ -202,6 +225,7 @@ h2, h3{
   text-align: right;
   text-align-last: right;
 }
+
 /* ORDER PAGE */
 
 .order-navigation {
