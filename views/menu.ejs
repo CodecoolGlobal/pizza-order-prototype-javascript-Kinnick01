@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Order your pizza</title>
+  <title>Our pizzas</title>
+  <link rel="icon" href="https://img.icons8.com/office/344/pizza.png">
   <link rel="stylesheet" href="/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +16,7 @@
 <body>
   <div class="menu-navigation">
     <ul class="menu-navbar">
+      <img class="navbar-logo" src="https://img.icons8.com/office/344/pizza.png" alt="Pizza logo">
       <li class="navbar-buttons"><a href="/">Home</a></li>
       <li class="navbar-buttons"><a href="/pizza/list">Menu</a></li>
       <li class="navbar-buttons"><a href="/myorder">My order</a></li>
@@ -35,9 +37,11 @@
           </h3>
           <h4>price <%= pizza.price %>
           </h4>
-          <input name="pizza" value="<%= pizza.id%>" type="hidden">
-          <input name="number" type="number" value="1" min="1">
-          <button type="submit" class="add-to-cart">Add to cart</button>
+          <div class="input-container">
+            <input name="pizza" value="<%= pizza.id%>" type="hidden">
+            <input class="input-field" name="number" type="number" value="1" min="1">
+            <button type="submit" class="add-to-cart">Add to cart</button>
+          </div>
         </form>
       </div>
       <% }); %>

@@ -34,6 +34,33 @@ html {
   background-color: tomato;
 }
 
+.navbar-logo{
+  align-self: center;
+  max-height: 42px;
+  padding-left: 8px;
+}
+
+h4{
+  text-transform: capitalize;
+}
+
+h1, h4{
+  font-style: initial;
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0px 0px 0px 0px;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+}
+
+h2, h3{
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 8px 0px;
+  text-align: justify;
+}
+
 /* INDEX PAGE CSS */
 
 .index-navigation {
@@ -109,6 +136,7 @@ html {
 }
 
 #menu-container {
+  color: antiquewhite;
   position: absolute;
   display: flex;
   flex-wrap: wrap;
@@ -118,22 +146,22 @@ html {
 
 .menu-item-container {
   display: inline-flex;
-  padding-bottom: 20px;
-  height: 300px;
+  padding-bottom: 30px;
+  height: 220px;
 }
 
 .menu-item-img {
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 200px;
+  max-height: 200px;
   margin-right: 20px;
   object-fit: fill;
 }
 
 .menu-item-form {
-  width: 100%;
+  width: 300px;
   font-family: 'Josefin Sans', sans-serif;
-  font-weight: 400;
-  font-size: larger;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
 }
 
 .menu-bgrnd {
@@ -146,4 +174,45 @@ html {
   height: -webkit-fill-available;
   width: -webkit-fill-available;
   object-fit: cover;
+}
+
+.input-container{
+  display: flex;
+  float: right;
+  padding: 0px;
+  margin: 0px;
+  height: 28px;
+}
+
+.add-to-cart{
+  width: 100px;
+  padding: 0px;
+  margin: 0px;
+  background-color: tomato;
+  border: 0px;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.input-field{
+  padding: 0px;
+  margin: 0px;
+  width: 34px;
+  border-radius: 20px 0px 0px 20px;
+  border: 0px;
+  text-align: right;
+  text-align-last: right;
+}
+/* ORDER PAGE */
+
+.order-navigation {
+  position: relative;
+  display: flex;
+  width: 100%;
+  background-color: crimson;
+}
+
+.order-navbar {
+  display: inline-flex;
+  margin: 0px;
+  padding: 0px;
 }
