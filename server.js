@@ -27,7 +27,7 @@ app.get('/pizza/list', function(req,res){
 })
 app.get('/myorder', function(req,res) {
     let package = JSON.parse(fs.readFileSync("./order.json"));
-    res.render()
+    res.render("order",{orderList: package.orders});
 })
 app.post("/myorder", function(req,res){
     // res.json(req.body);
@@ -48,10 +48,23 @@ app.post("/myorder", function(req,res){
                     throw err;
                 }
                 else{
-                    res.send("done")
+                    res.redirect(301, "/pizza/list")
                 }
             });
 
+        }
+    })
+})
+app.post("/checkout", (req,res)=>{
+    const initObject = {
+        "orders": []
+      }
+    fs.writeFile("./order.json", JSON.stringify(initObject, null, 2),(err)=>{
+        if(err){
+            throw err;
+        }
+        else{
+            res.redirect(301, "/")
         }
     })
 })

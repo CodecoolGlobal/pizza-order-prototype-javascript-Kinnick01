@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;700&display=swap" rel="stylesheet">
@@ -19,6 +20,20 @@
             <li class="navbar-buttons"><a href="/myorder">My order</a></li>
         </ul>
     </div>
+    <div>
+        <% orderList.forEach(function(order){ %>
+            <h1>
+                <%=order.pizza%>
+            </h1>
+            <h2>
+                <%=order.number%>
+            </h2>
+            
+     <%   }) %>
+    </div>
+    <form id="checkout" action="http://127.0.0.1:9001/checkout" method="post">
+        <button type="submit" form="checkout">Check out</button>
+    </form>
 </body>
 
 </html>
