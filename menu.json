@@ -5,13 +5,13 @@
             "name": "Marinara",
             "ingredients": [
                 "San Marzano tomato sauce",
-                "Garlic",
-                "Oregano",
-                "Olive oil",
-                "Mozzarella"
+                " garlic",
+                " oregano",
+                " olive oil",
+                " mozzarella"
 
             ],
-            "Price": 3200,
+            "price": 3200,
             "Allergens": [
                 1,
                 3,
@@ -23,16 +23,16 @@
             "name": "Hawaii",
             "ingredients": [
                 "San Marzano tomato sauce",
-                "Garlic",
-                "Oregano",
-                "Olive oil",
-                "Ham",
-                "Pineapple",
-                "Basil",
-                "Mozzarella"
+                " garlic",
+                " oregano",
+                " olive oil",
+                " ham",
+                " pineapple",
+                " basil",
+                " mozzarella"
 
             ],
-            "Price": 3500,
+            "price": 3500,
             "Allergens": [
                 1,
                 3,
@@ -44,15 +44,15 @@
             "name": "Pepperoni",
             "ingredients": [
                 "San Marzano tomato sauce",
-                "Garlic",
-                "Oregano",
-                "Olive oil",
-                "Pepperoni",
-                "Basil",
-                "Mozzarella"
+                " garlic",
+                " oregano",
+                " olive oil",
+                " pepperoni",
+                " basil",
+                " mozzarella"
 
             ],
-            "Price": 3400,
+            "price": 3400,
             "Allergens": [
                 1,
                 3,
@@ -64,16 +64,16 @@
             "name": "Bolognese",
             "ingredients": [
                 "Home made bolognese meat-sauce",
-                "Garlic",
-                "Oregano",
-                "Olive oil",
-                "Carrots",
-                "Basil",
-                "Pepper",
-                "Mozzarella"
+                " garlic",
+                " oregano",
+                " olive oil",
+                " carrots",
+                " basil",
+                " pepper",
+                " mozzarella"
 
             ],
-            "Price": 3450,
+            "price": 3450,
             "Allergens": [
                 1,
                 3,
@@ -85,15 +85,15 @@
             "name": "San Pedro",
             "ingredients": [
                 "Homemade mexican pizza sauce",
-                "Garlic",
-                "Oregano",
-                "Olive oil",
-                "ground beef",
-                "Bell peppers",
-                "Pinto/black beans",
-                "Mozzarella"
+                " garlic",
+                " oregano",
+                " olive oil",
+                " ground beef",
+                " bell peppers",
+                " pinto/black beans",
+                " mozzarella"
             ],
-            "Price": 3550,
+            "price": 3550,
             "Allergens": [
                 1,
                 3,
@@ -105,15 +105,15 @@
             "name": "Golden truffles",
             "ingredients": [
                 "San Marzano tomato sauce",
-                "Garlic",
-                "Oregano",
-                "Olive oil",
-                "white truffle from Tuscany",
-                "Pule cheese",
-                "Edible gold on top of the cheese",
-                "Black caviar"
+                " garlic",
+                " oregano",
+                " olive oil",
+                " white truffle from Tuscany",
+                " pule cheese",
+                " edible gold on top ",
+                " black caviar"
             ],
-            "Price": 25000,
+            "price": 25000,
             "Allergens": [
                 1,
                 3,
@@ -122,19 +122,19 @@
         },
         {
             "id": 7,
-            "name": "Quattro Formaggi",
+            "name": "Quattro formaggi",
             "ingredients": [
                 "San Marzano tomato sauce",
-                "Garlic",
-                "Oregano",
-                "Olive oil",
-                "Grana padano",
-                "Mozzarella",
-                "Parmiggiano",
-                "Bufala Mozzarella"
+                " garlic",
+                " oregano",
+                " olive oil",
+                " grana padano",
+                " mozzarella",
+                " parmiggiano",
+                " bufala mozzarella"
 
             ],
-            "Price": 3400,
+            "price": 3400,
             "Allergens": [
                 1,
                 3,
