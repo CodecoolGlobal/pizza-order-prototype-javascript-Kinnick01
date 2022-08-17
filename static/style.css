@@ -34,6 +34,28 @@ html {
   background-color: tomato;
 }
 
+.navbar-logo{
+  align-self: center;
+  max-height: 42px;
+  padding-left: 8px;
+}
+
+h1, h4{
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0px 0px 0px 0px;
+  padding: 10px 0px 10px 0px;
+}
+
+h2, h3{
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 8px 0px;
+}
+
+
+
 /* INDEX PAGE CSS */
 
 .index-navigation {
@@ -109,6 +131,7 @@ html {
 }
 
 #menu-container {
+  color: antiquewhite;
   position: absolute;
   display: flex;
   flex-wrap: wrap;
@@ -118,22 +141,22 @@ html {
 
 .menu-item-container {
   display: inline-flex;
-  padding-bottom: 20px;
-  height: 300px;
+  padding-bottom: 30px;
+  height: 220px;
 }
 
 .menu-item-img {
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 200px;
+  max-height: 200px;
   margin-right: 20px;
   object-fit: fill;
 }
 
 .menu-item-form {
-  width: 100%;
+  width: 300px;
   font-family: 'Josefin Sans', sans-serif;
-  font-weight: 400;
-  font-size: larger;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
 }
 
 .menu-bgrnd {
