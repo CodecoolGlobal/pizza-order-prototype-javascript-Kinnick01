@@ -151,6 +151,7 @@ h3 {
   display: inline-flex;
   padding-bottom: 30px;
   height: 220px;
+  padding-right: 30px;
 }
 
 .menu-item-img {
@@ -257,6 +258,7 @@ h3 {
 }
 
 #menu-allergen-container-checkboxes {
+  text-transform: capitalize;
   display: flex;
   position: relative;
 }

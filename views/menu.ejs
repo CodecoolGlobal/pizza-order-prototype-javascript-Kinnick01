@@ -25,18 +25,18 @@
   </div>
   <div id="menu-container">
     <% pizzasList.pizzas.forEach(function(pizza) { %>
-      <div class="menu-item-container">
+      <div id="pizzaDiv<%= pizza.id%>" class="menu-item-container">
         <img class="menu-item-img" src="/<%=pizza.name%>.png">
-        <form id="<%= pizza.id%>" class="menu-item-form" action="http://127.0.0.1:9001/myorder" method="post">
+        <form class="menu-item-form" action="http://127.0.0.1:9001/myorder" method="post">
           <h1>
             <%= pizza.name %>
           </h1>
           <h2>
             <%= pizza.ingredients %>
           </h2>
-          <h3>allergens <%= pizza.allergens %>
+          <h3 class="menu-allergens">Allergens: <%= pizza.allergens %>
           </h3>
-          <h4>price <%= pizza.price %>
+          <h4>Price: <%= pizza.price %> Mmc
           </h4>
           <div class="input-container">
             <input name="pizza" value="<%= pizza.name%>" type="hidden">

@@ -9,45 +9,48 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static('static'));
 
-
 const pizzaRouter = require("./routers/pizzas")
 app.use("/api/pizza", pizzaRouter)
 
 const allergensRouter = require("./routers/allergens")
 app.use("/api/allergens", allergensRouter)
 
-app.get('/', function(req, res){
+app.get('/', function (req, res) {
     let package = JSON.parse(fs.readFileSync("./menu.json"));
-    res.render("index", { welcome: `ezt a fos szart baszki!!!`})
-    });
-app.get('/pizza/list', function(req,res){
+    res.render("index", { welcome: `ezt a fos szart baszki!!!` })
+});
+app.get('/pizza/list', function (req, res) {
     let package = JSON.parse(fs.readFileSync("./menu.json"));
-    res.render("menu", {pizzasList: package})
+    res.render("menu", { pizzasList: package })
 })
-app.get('/myorder', function(req,res) {
+app.get('/myorder', function (req, res) {
     let package = JSON.parse(fs.readFileSync("./order.json"));
-    res.render("order",{orderList: package.orders});
+    res.render("order", { orderList: package.orders });
     console.log(package.orders.pizza)
 })
-app.post("/myorder", function(req,res){
+app.post("/myorder", function (req, res) {
 
-    fs.readFile("./order.json", (err,data) => {
+    fs.readFile("./order.json", (err, data) => {
         if (err) {
             throw err;
         }
         else {
             const package = JSON.parse(data);
             let newPackage = req.body;
-            for (pizzaValue of package.order.pizza) 
-            if(package.orders.pizza.includes(`${package.order.pizza}`)){
-                
-            }
+            // for (pizzaValue of package.orders) {
+            //     if (pizzaValue.pizza === newPackage.pizza) {
+            //         let pizzaTopUp = parseInt(pizzaValue.number) + parseInt(newPackage.number);
+            //         package.orders.number = pizzaTopUp
+            //     } if (pizzaValue.pizza !== newPackage.pizza) {
+            //         package.orders.push(newPackage);
+            //     }
+            // }
             package.orders.push(newPackage);
-            fs.writeFile("./order.json", JSON.stringify(package,null,2),(err)=>{
-                if(err){
+            fs.writeFile("./order.json", JSON.stringify(package, null, 2), (err) => {
+                if (err) {
                     throw err;
                 }
-                else{
+                else {
                     res.redirect(301, "/pizza/list")
                 }
             });
@@ -55,35 +58,20 @@ app.post("/myorder", function(req,res){
         }
     })
 })
-app.post("/checkout", (req,res)=>{
+app.post("/checkout", (req, res) => {
     const initObject = {
         "orders": []
-      }
-    fs.writeFile("./order.json", JSON.stringify(initObject, null, 2),(err)=>{
-        if(err){
+    }
+    fs.writeFile("./order.json", JSON.stringify(initObject, null, 2), (err) => {
+        if (err) {
             throw err;
         }
-        else{
+        else {
             res.redirect(301, "/")
         }
     })
 })
 
-
-
-
-
-
 const port = 9001;
 
-
-
 app.listen(port, _ => console.log(`http://127.0.0.1:${port}`));
-
-
-// <h2><%orderList.reduce(function(a,b){%>
-//     <%let sum = Number(a.price) + Number(b.price);%>
-// Sum of Price <%= sum %>
-// </h2>
-
-// <%});%>

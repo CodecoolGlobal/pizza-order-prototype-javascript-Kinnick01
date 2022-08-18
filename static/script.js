@@ -9,8 +9,9 @@ addToCartButton.forEach(cartButton => {
   })
 });
 
-
-mammaMiaButton.addEventListener('click', showCheckboxes);
+mammaMiaButton.addEventListener('click', () => {
+  showCheckboxes();
+});
 
 function showCheckboxes() {
   mammaMiaButton.style.display = 'none';
@@ -24,9 +25,20 @@ function showCheckboxes() {
         allergenContainerCheckboxes.appendChild(newLabel);
         newInput.type = 'checkbox';
         newLabel.innerHTML = allergen.name;
+        newInput.id = allergen.name;
         newInput.className = 'checkbox-class';
         newLabel.setAttribute('for', `${allergen.name}`);
-      });
+        const menuItem = document.querySelectorAll('.menu-item-container');
+      })
+      allergenContainerCheckboxes.addEventListener('click', (event) => {
+        const pizzaDivs = document.querySelectorAll('.menu-allergens');
+        const pizzaDiv = document.querySelectorAll('.menu-item-container')
+        for (let i = 0; i < pizzaDivs.length; i++) {
+          if (pizzaDivs[i].innerText.includes(event.target.id)) {
+            pizzaDiv[i].style.display = event.target.checked ? 'none' : 'flex';
+          }
+        }
+      })
     })
   const newButton = document.createElement('button');
   allergenContainer.appendChild(newButton);
