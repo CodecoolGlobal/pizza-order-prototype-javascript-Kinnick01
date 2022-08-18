@@ -13,7 +13,6 @@
             ],
             "price": 3200,
             "allergens": [
-                1,
                 3,
                 9
             ]
@@ -35,7 +34,7 @@
             "price": 3500,
             "allergens": [
                 1,
-                3,
+                4,
                 9
             ]
         },
@@ -55,15 +54,14 @@
             "price": 3400,
             "allergens": [
                 1,
-                3,
-                9
+                6
             ]
         },
         {
             "id": 4,
             "name": "Bolognese",
             "ingredients": [
-                "Home made bolognese meat-sauce",
+                "Homemade bolognese meat-sauce",
                 " garlic",
                 " oregano",
                 " olive oil",
@@ -145,31 +143,31 @@
 "allergens": [
     {
         "id": 1,
-        "name": "Gluten"
+        "name": "gluten"
     },
     {
         "id": 2,
-        "name": "Crustaceans"
+        "name": "crustaceans"
     },
     {
         "id": 3,
-        "name": "Eggs"
+        "name": "eggs"
     },
     {
         "id": 4,
-        "name": "Fish"
+        "name": "fish"
     },
     {
         "id": 5,
-        "name": "DEEZ NUTS"
+        "name": "deez nuts"
     },
     {
         "id": 6,
-        "name": "Soy"
+        "name": "soy"
     },
     {
         "id": 9,
-        "name": "Lactose"
+        "name": "lactose"
     }
 
 ]
