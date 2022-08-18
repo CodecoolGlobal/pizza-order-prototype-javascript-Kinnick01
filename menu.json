@@ -13,8 +13,7 @@
             ],
             "price": 3200,
             "allergens": [
-                3,
-                9
+                "eggs"
             ]
         },
         {
@@ -33,9 +32,8 @@
             ],
             "price": 3500,
             "allergens": [
-                1,
-                4,
-                9
+                "lactose",
+                "eggs"
             ]
         },
         {
@@ -53,8 +51,8 @@
             ],
             "price": 3400,
             "allergens": [
-                1,
-                6
+                "lactose",
+                "eggs"
             ]
         },
         {
@@ -73,9 +71,7 @@
             ],
             "price": 3450,
             "allergens": [
-                1,
-                3,
-                9
+                "lactose"
             ]
         },
         {
@@ -93,9 +89,7 @@
             ],
             "price": 3550,
             "allergens": [
-                1,
-                3,
-                9
+                "gluten"
             ]
         },
         {
@@ -113,9 +107,7 @@
             ],
             "price": 25000,
             "allergens": [
-                1,
-                3,
-                9
+                "gluten"
             ]
         },
         {
@@ -134,9 +126,7 @@
             ],
             "price": 3400,
             "allergens": [
-                1,
-                3,
-                9
+                "gluten"
             ]
         }
     ],
