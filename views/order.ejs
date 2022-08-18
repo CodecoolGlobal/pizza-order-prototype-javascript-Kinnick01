@@ -25,14 +25,23 @@
     </div>
     <div>
         <% orderList.forEach(function(order){ %>
+         
             <h1>
                 <%=order.pizza%>
             </h1>
             <h2>
-                <%=order.number%>
-            </h2>
-            
-     <%   }) %>
+               <div id="ordersdiv"><%=order.number%></div>
+            <div id='orderpricediv'><%=order.price%></div>
+        </h2>
+        
+        <div id="sum-of-pizzas">
+        </div>
+        
+        <%   }) %>
+    </div>
+    <div id="checkoutprice">
+      
+
     </div>
     <form id="checkout" action="http://127.0.0.1:9001/checkout" method="post">
         <button type="submit" form="checkout">Check out</button>
