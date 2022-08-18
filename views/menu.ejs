@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our pizzas</title>
-  <link rel="icon" href="https://img.icons8.com/office/344/pizza.png">
+  <!-- <link rel="icon" href="https://img.icons8.com/office/344/pizza.png"> -->
   <link rel="stylesheet" href="/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;700&display=swap" rel="stylesheet">
-  <script type="text/javascript" src="/script.js"></script>
+  <script type="text/javascript" src="/script.js" defer></script>
 </head>
 
 <body>
@@ -46,18 +46,20 @@
         </form>
       </div>
       <% }); %>
+  </div>
+  <form id="pizza-filter" action="http://127.0.0.1:9001/filteredPizza" method="get">
+
+  </form>
+  <div id="menu-allergen-container">
+    <button id="menu-show-allergens">You have allergies? Mamma Mia!</button>
+    <div id="menu-allergen-container-checkboxes">
     </div>
-    
-    <button id="menu-show-allergens">You have allergies? Mamma Mia</button>
-    
-    <form id="pizza-filter" action="http://127.0.0.1:9001/filteredPizza" method="get">
-      
-    </form>
-    <div class="menu-bgrnd">
-      <img id="menu-bgrnd-img" src="/menu_bgrnd.jpg">
-    </div>
-   
-  </body>
-  
+  </div>
+  <div class="menu-bgrnd">
+    <img id="menu-bgrnd-img" src="/menu_bgrnd.jpg">
+  </div>
+
+</body>
+
 
 </html>
