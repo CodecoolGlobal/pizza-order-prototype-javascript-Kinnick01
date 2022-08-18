@@ -144,6 +144,7 @@ h3 {
   flex-wrap: wrap;
   padding-left: 20px;
   padding-top: 20px;
+  top: 90px;
 }
 
 .menu-item-container {
@@ -159,14 +160,28 @@ h3 {
   object-fit: fill;
 }
 
-.menu-item-img:hover{
-  -webkit-animation:spin 4s linear infinite;
-    -moz-animation:spin 4s linear infinite;
-    animation:spin 4s linear infinite;
+.menu-item-img:hover {
+  animation: spin 6s linear infinite;
 }
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 
 .menu-item-form {
   width: 300px;
@@ -207,7 +222,7 @@ h3 {
 }
 
 .add-to-cart:hover {
-  background-color: rgba(5, 146, 0, 1.0);
+  background-color: rgb(15, 176, 10);
 }
 
 .add-to-cart:active {
@@ -226,10 +241,71 @@ h3 {
   text-align-last: right;
 }
 
-#menu-allergen-container{
+#menu-allergen-container {
+  color: antiquewhite;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0px;
+  background-color: rgba(5, 146, 0, 1.0);
+  border: 0px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 30px;
+  width: 100%;
+}
+
+#menu-allergen-container-checkboxes {
   display: flex;
   position: relative;
 }
+
+#menu-show-allergens {
+  font-size: 14px;
+  width: 100%;
+  height: 30px;
+  color: antiquewhite;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0px;
+  background-color: rgba(5, 146, 0, 1.0);
+  border: 0px;
+}
+
+#menu-show-allergens:hover {
+  background-color: rgb(15, 176, 10);
+}
+
+#hide-checkboxes-button {
+  font-size: 14px;
+  height: 30px;
+  color: antiquewhite;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0px;
+  background-color: rgba(5, 146, 0, 0.9);
+  border: 0px;
+  padding-right: 20px;
+}
+
+#hide-checkboxes-button:hover {
+  background-color: rgb(15, 176, 10);
+}
+
+input {
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  /* change "blue" browser chrome to yellow */
+  filter: invert(100%) hue-rotate(18deg) brightness(1.7);
+}
+
+label {
+  font-weight: 400;
+  font-size: 14px;
+  padding-top: 3px;
+}
+
 /* ORDER PAGE */
 
 .order-navigation {

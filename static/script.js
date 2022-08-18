@@ -32,7 +32,7 @@ function showCheckboxes() {
   allergenContainer.appendChild(newButton);
   newButton.id = 'hide-checkboxes-button'
   newButton.style.display = 'inline-block';
-  newButton.innerHTML = "Mamma mia! I don't have any allergies!";
+  newButton.innerHTML = "Mamma mia! I don't have any allergies! Click here to hide the allergen filter!";
   const hideButton = document.getElementById('hide-checkboxes-button');
   hideButton.addEventListener('click', () => {
     console.log('faszi');
