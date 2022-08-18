@@ -25,7 +25,7 @@
     </div>
     <div>
         <% orderList.forEach(function(order){ %>
-
+            <img class="order-item-img" src="/<%=order.pizza%>.png">
             <h1>
                 <%=order.pizza%>
             </h1>
@@ -34,7 +34,7 @@
                     <%=order.number%>
                 </div>
                 <div id='orderpricediv'>
-                    <%=order.price%>
+                    <%=order.price%> MMC
                 </div>
             </h2>
 
@@ -43,12 +43,14 @@
 
             <% }) %>
                 <h2>
-                    <%orderList.reduce(function(a,b){%>
-                        <%let sum=Number(a.price) + Number(b.price);%>
-                            Sum of Price <%= sum %>
-                </h2>
-
-                <%});%>
+                    <%if(orderList.length){ %>
+                        <%orderList.reduce(function(a,b){%>
+                            <%let sum=Number(a.price) + Number(b.price);%>
+                               Checkout summary <%=sum%> MMC
+                                
+                                <%});%>
+                    <%}%>
+                        </h2>
     </div>
     <div id="checkoutprice">
 
