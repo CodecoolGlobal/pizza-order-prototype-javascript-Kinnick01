@@ -17,7 +17,7 @@ app.use("/api/allergens", allergensRouter)
 
 app.get('/', function (req, res) {
     let package = JSON.parse(fs.readFileSync("./menu.json"));
-    res.render("index", { welcome: `ezt a fos szart baszki!!!` })
+    res.render("index", { welcome: `?` })
 });
 app.get('/pizza/list', function (req, res) {
     let package = JSON.parse(fs.readFileSync("./menu.json"));
