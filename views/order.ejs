@@ -43,13 +43,7 @@
 
             <% }) %>
                 <h2 class="order-header">
-                    <%if(orderList.length){ %>
-                        <%orderList.reduce(function(a,b){%>
-                            <%let sum=Number(a.price) + Number(b.price);%>
-                               Checkout summary <%=sum%> MMC (Mamma Mia Coin)
-                                
-                                <%});%>
-                    <%}%>
+                    Summary: <%= sum %>
                         </h2>
     </div>
     <div id="checkoutprice">

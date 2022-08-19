@@ -1,3 +1,14 @@
 {
-  "orders": []
+  "orders": [
+    {
+      "pizza": "Marinara",
+      "price": "3200",
+      "number": "1"
+    },
+    {
+      "pizza": "Pepperoni",
+      "price": "3400",
+      "number": 2
+    }
+  ]
 }

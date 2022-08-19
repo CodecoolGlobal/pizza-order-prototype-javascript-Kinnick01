@@ -14,6 +14,7 @@ mammaMiaButton.addEventListener('click', () => {
 });
 
 function showCheckboxes() {
+  debugger;
   mammaMiaButton.style.display = 'none';
   allergenContainerCheckboxes.innerHTML = '';
   fetchMenuJson()
