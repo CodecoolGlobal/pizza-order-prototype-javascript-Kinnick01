@@ -29,6 +29,19 @@ hideButton.addEventListener('click', () => {
   checkboxContainer.style.display = 'none';
 })
 
+mammaMiaButton.addEventListener('click', () => {
+  mammaMiaButton.style.display = 'none';
+  hideButton.style.display = 'block';
+  checkboxContainer.style.display = 'block'
+  checkBoxListener();
+});
+
+hideButton.addEventListener('click', () => {
+  mammaMiaButton.style.display = 'block';
+  hideButton.style.display = 'none';
+  checkboxContainer.style.display = 'none';
+})
+
 function checkBoxListener() {
   checkboxContainer.addEventListener('click', (event) => {
     const allergens = document.querySelectorAll('.checkbox-class');
