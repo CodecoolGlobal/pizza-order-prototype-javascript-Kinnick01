@@ -247,7 +247,7 @@ h3 {
   background-color: rgba(5, 146, 0, 1.0);
   border: 0px;
   display: flex;
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
   justify-content: center;
   align-items: center;
   position: relative;
@@ -257,19 +257,19 @@ h3 {
 
 #menu-allergen-container-checkboxes {
   text-transform: capitalize;
-  display: flex;
+  display: none;
   position: relative;
 }
 
 #menu-show-allergens {
   font-size: 14px;
-  width: 100%;
   height: 30px;
   color: antiquewhite;
   font-family: 'Josefin Sans', sans-serif;
   margin: 0px;
   background-color: rgba(5, 146, 0, 1.0);
   border: 0px;
+  display: block;
 }
 
 #menu-show-allergens:hover {
@@ -277,14 +277,14 @@ h3 {
 }
 
 #hide-checkboxes-button {
+  display: none;
   font-size: 14px;
   height: 30px;
   color: antiquewhite;
   font-family: 'Josefin Sans', sans-serif;
   margin: 0px;
-  background-color: rgba(5, 146, 0, 0.9);
+  background-color: rgba(5, 146, 0, 1.0);
   border: 0px;
-  padding-right: 20px;
 }
 
 #hide-checkboxes-button:hover {
