@@ -36,14 +36,14 @@ app.post("/myorder", function (req, res) {
         else {
             const package = JSON.parse(data);
             let newPackage = req.body;
-            for (pizzaValue of package.orders) {
-                if (pizzaValue.pizza === newPackage.pizza) {
-                    let pizzaTopUp = parseInt(pizzaValue.number) + parseInt(newPackage.number);
-                    package.orders.number = pizzaTopUp
-                } if (pizzaValue.pizza !== newPackage.pizza) {
-                    package.orders.push(newPackage);
-                }
-            }
+            // for (pizzaValue of package.orders) {
+            //     if (pizzaValue.pizza === newPackage.pizza) {
+            //         let pizzaTopUp = parseInt(pizzaValue.number) + parseInt(newPackage.number);
+            //         package.orders.number = pizzaTopUp
+            //     } if (pizzaValue.pizza !== newPackage.pizza) {
+            //     }
+            // }
+            package.orders.push(newPackage);
             fs.writeFile("./order.json", JSON.stringify(package, null, 2), (err) => {
                 if (err) {
                     throw err;
