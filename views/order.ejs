@@ -23,13 +23,13 @@
             <li class="navbar-buttons"><a href="/myorder">My order</a></li>
         </ul>
     </div>
-    <div>
+    <div class="order-container">
         <% orderList.forEach(function(order){ %>
             <img class="order-item-img" src="/<%=order.pizza%>.png">
-            <h1>
+            <h1 class="order-header">
                 <%=order.pizza%>
             </h1>
-            <h2>
+            <h2 class="order-text">
                 <div id="ordersdiv">
                     <%=order.number%>
                 </div>
@@ -42,11 +42,11 @@
             </div>
 
             <% }) %>
-                <h2>
+                <h2 class="order-header">
                     <%if(orderList.length){ %>
                         <%orderList.reduce(function(a,b){%>
                             <%let sum=Number(a.price) + Number(b.price);%>
-                               Checkout summary <%=sum%> MMC
+                               Checkout summary <%=sum%> MMC (Mamma Mia Coin)
                                 
                                 <%});%>
                     <%}%>
@@ -57,7 +57,7 @@
 
     </div>
     <form id="checkout" action="http://127.0.0.1:9001/checkout" method="post">
-        <button type="submit" form="checkout">Check out</button>
+        <button class="checkout-button" type="submit" form="checkout">Check out</button>
     </form>
 </body>
 
